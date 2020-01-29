@@ -7,7 +7,7 @@ def binary_search(li, item):
         mid = int((low + high) / 2)
         guess = li[mid]
         if guess == item:
-            return f'index of {item}  in list is {mid}. Amount of searches is {count}'
+            return f'index of item {item} in list is {mid}. Amount of searches is {count}'
         elif guess > item:
             high = mid - 1
         else:
