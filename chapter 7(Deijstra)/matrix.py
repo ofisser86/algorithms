@@ -1,6 +1,7 @@
 class Matrix:
-    inf = 9223372036854775807
+    inf = float("inf")
 
+    # Create matrix from input data
     def __init__(self, ssize):
         self.size = ssize
         self.matrix = [[self.inf for x in range(ssize)] for x in range(ssize)]
@@ -8,6 +9,7 @@ class Matrix:
             self.matrix[i][i] = 0
     def __getitem__(self, i):
         return self.matrix[i]
+    
     #floyd algorithm for 
     def Floyd(self):
         for k in range(self.size):

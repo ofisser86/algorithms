@@ -4,7 +4,7 @@ while True:
     try:
         number_of_tests = int(input("Number of tests: "))
         if number_of_tests > 0:
-            print (number_of_tests)
+            print(number_of_tests)
         else:
             raise Exception()
         break
@@ -15,13 +15,14 @@ while True:
     try:
         number_of_cities = int(input("Number of cities: "))
         if number_of_cities > 0:
-            print (number_of_cities)
+            print(number_of_cities)
         else:
             raise Exception()
         break
     except:
         print("Please, input correct number of cities!")
 
+# Create Matrix object
 matrix = matrix.Matrix(number_of_cities)
 current_city_number = 0
 city_names = [number_of_cities]
